@@ -1,0 +1,13 @@
+num = int(input('Please enter a number:'))
+if num % 2 == 0:
+    print('Your number is even')
+else:
+    print ('Your number is odd')
+if num % 4 == 0:
+    print ('If you\'re interested, your number is also a multiple of four.')
+check = (int(input('Ok, while we\'re here let\'s try some dividing. Give me a number:')))
+div = (int(input('Ok, sweet. And another:')))
+if div % check == 0:
+    print('Your second number divides evenly into the first. I\'m sure you\'re as delighted as I am')
+else:
+    print('Your second number doesn\'t divide evenly into the first. Sorry. You don\'t win anything if they did though so relax.')
