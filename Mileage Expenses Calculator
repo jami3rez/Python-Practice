@@ -1,0 +1,16 @@
+import math
+
+PerMile = 0.55
+
+distance = float(input('How far is one round trip to site?'))
+
+people = int(input('How many people are going?'))
+
+trips = int(input('How many trips are needed?'))
+
+Total = (PerMile*distance*people*trips)
+
+def round_up_to_nearest_10(num):
+    return math.ceil(num / 10) * 10
+
+print ('The total travel expenses cost is: £'+ str(round_up_to_nearest_10(Total)))
