@@ -1,0 +1,26 @@
+import random
+a = random.randint (1, 9)
+
+print('We\'re going to play guess the number. It\'s between 1 and 9. What is it?')
+print('Type exit to quit')
+
+guess = 0
+count = 0
+
+while guess != a and guess !='exit':
+
+    guess = input(':')
+
+    if guess == 'exit':
+        break
+
+    guess =int(guess)
+    count += 1
+
+    if guess == a:
+        print('Christ, that\'s right! Nice one!')
+        print('It only took you ', + count, 'guesses.')
+    elif guess > a:
+        print('Your guess was too high, guess again!')
+    elif guess < a:
+        print('Your guess was too low, guess again!')
